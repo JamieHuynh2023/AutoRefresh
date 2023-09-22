@@ -31,7 +31,7 @@ async function autoRefresh() {
   req.end();
 };
 
-async function selfRefresh() {
+function selfRefresh() {
   // Testing on local host: using http instead of https
   const req = https.request(selfOption, res => {
     console.log(`Status code: ${res.statusCode}, Successfully sent req to local Server`);
