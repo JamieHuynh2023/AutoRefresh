@@ -15,7 +15,7 @@ const options = {
 
 const selfOption = {
   hostname: process.env.SELF_DOMAIN,
-  port: process.env.PORT,
+  //port: process.env.PORT,
   path: process.env.SELF_PATH,
   method: 'GET'
 };
