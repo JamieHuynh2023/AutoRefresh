@@ -48,7 +48,7 @@ async function selfRefresh() {
 server.get('/', async (req, res) => {
   try {
   await autoRefresh();
-  const delay = 0.1 * 60 * 1000; // 12 minutes timout
+  const delay = 10 * 60 * 1000; // 12 minutes timout
   setTimeout(selfRefresh, delay);
   
   res.status(200).json({
