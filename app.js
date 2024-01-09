@@ -65,6 +65,7 @@ server.get('/', async (req, res) => {
   await autoRefresh();
   const delay = 0.1 * 60 * 1000; // 12 minutes timout
   setTimeout(selfRefresh, delay);
+  setTimeout(secondOptions, delay);
   
   res.status(200).json({
     message: `Successfully sent req to ${process.env.HOST_DOMAIN}`
